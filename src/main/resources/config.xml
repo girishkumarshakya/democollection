@@ -1,0 +1,60 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="core.spring.list.ListExample" id="listExample">
+        <property name="cities">
+            <list>
+                <value>New Delhi</value>
+                <value>Lucknow</value>
+                <value>Jaipur</value>
+                <value>Chandigarh</value>
+                <value>Shrinagar</value>
+                <value>Kolkata</value>
+                <value>Ranchi</value>
+                <value>Bhopal</value>
+                <value>Mumbai</value>
+                <value>Gandhi Nagar</value>
+                <value>Hyderabad</value>
+                <value>Bangalore</value>
+                <value>Chennai</value>
+                <value>Vijaynagar</value>
+                <value>Shilong</value>
+            </list>
+        </property>
+    </bean>
+    <bean class="core.spring.set.SetExample" id="setExample">
+        <property name="countries">
+            <set>
+                <value>INDIA</value>
+                <value>CHINA</value>
+                <value>SHRI LANKA</value>
+                <value>USA</value>
+                <value>UK</value>
+                <value>ISRAEL</value>
+                <value>AUSTRALIA</value>
+            </set>
+        </property>
+    </bean>
+    <bean class="core.spring.map.MapExample" id="mapExample">
+        <property name="countryCodes">
+            <map>
+                <entry key="INDIA" value="91"/>
+                <entry key="CHINA" value="86"/>
+                <entry key="JAPAN" value="81"/>
+                <entry key="ISRAEL" value="972"/>
+                <entry key="UNITED STATES" value="1"/>
+            </map>
+        </property>
+    </bean>
+    <bean class="core.spring.property.PropExample" id="propExample">
+        <property name="databases">
+            <props>
+                <prop key="driverClassName">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/employee</prop>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
